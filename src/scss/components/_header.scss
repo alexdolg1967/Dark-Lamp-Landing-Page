@@ -17,7 +17,6 @@
 	align-items: center;
 
 	&__logo,
-	&__toggle,
 	&__close {
 		color: var(--title-color);
 	}
@@ -29,6 +28,10 @@
 		align-items: center;
 		column-gap: 0.5rem;
 		transition: 0.3s;
+		& svg {
+			width: 20px;
+			height: 26px;
+		}
 
 		&:hover {
 			color: var(--first-color);
@@ -39,12 +42,6 @@
 			color: var(--first-color);
 		}
 	}
-	&__toggle {
-		display: inline-flex;
-		font-size: 1.25rem;
-		cursor: pointer;
-	}
-
 	&__menu {
 		@media screen and (max-width: 767px) {
 			position: fixed;

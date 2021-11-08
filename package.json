@@ -1,9 +1,9 @@
 {
   "name": "Dark-Lamp-Landing-Page",
   "version": "1.0.0",
-  "description": "Create cool slider",
+  "description": "frontend",
   "main": "gulpfile.js",
-  "homepage": "https://alexdolg1967.github.io",
+  "homepage": "https://alexdolg1967.github.io/dark-lamp-landing-page/",
   "scripts": {
     "html": "node-w3c-validator -f lint -evH -i app/**/*.html",
     "dev": "gulp",
