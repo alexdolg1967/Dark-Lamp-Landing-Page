@@ -7,36 +7,31 @@
 	&__container {
 		grid-template-columns: minmax(260px, 1fr);
 		gap: var(--grid-gap);
-		@media screen and (min-width: 580px) {
+		@media screen and (min-width: 610px) {
 			grid-template-columns: repeat(2, minmax(260px, 1fr));
 		}
 	}
 	&__item {
 		position: relative;
-		height: 49vw;
-		padding: 2rem;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
 		transition: 0.4s ease-in-out;
-		@media screen and (min-width: 580px) {
-			height: 24vw;
-		}
 		&:hover {
 			@media screen and (min-width: 768px) {
 				transform: translateY(-6px);
 			}
 		}
 		&--img {
-			position: absolute;
-			top: 0;
-			left: 0;
-			right: 0;
-			bottom: 0;
+			width: 100%;
+			height: 100%;
 			object-fit: cover;
 			z-index: 2;
 		}
 		&--content {
+			position: absolute;
+			top: 50%;
+			transform: translate(2rem, -50%);
 			z-index: 3;
 		}
 		&--descr,
