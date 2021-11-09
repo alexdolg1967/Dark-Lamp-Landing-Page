@@ -33,8 +33,10 @@ button {
 h1,
 h2,
 h3 {
+	font-family: "NotoSerif", serif;
 	color: var(--title-color);
-	font-weight: var(--font-semi-bold);
+	font-weight: var(--font-medium);
+	text-transform: capitalize;
 }
 
 ul {

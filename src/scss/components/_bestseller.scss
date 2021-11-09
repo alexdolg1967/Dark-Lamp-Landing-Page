@@ -1,0 +1,13 @@
+.bestseller {
+	&__title {
+		margin-bottom: var(--mb-1-5);
+	}
+	&__filter {
+		&--buttons {
+			width: 100%;
+			display: flex;
+			justify-content: center;
+			gap: 1.5rem;
+		}
+	}
+}
