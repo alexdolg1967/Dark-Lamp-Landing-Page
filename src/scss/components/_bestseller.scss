@@ -8,6 +8,43 @@
 			display: flex;
 			justify-content: center;
 			gap: 1.5rem;
+			margin-bottom: var(--mb-2-5);
+		}
+	}
+	&__container {
+		grid-template-columns: minmax(260px, 1fr);
+		gap: var(--grid-gap);
+		@media screen and (min-width: 567px) {
+			grid-template-columns: repeat(2, minmax(260px, 1fr));
+		}
+		@media screen and (min-width: 900px) {
+			grid-template-columns: repeat(3, minmax(260px, 1fr));
+		}
+		@media screen and (min-width: 1200px) {
+			grid-template-columns: repeat(4, minmax(260px, 1fr));
+		}
+	}
+	&__item {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding: 1.2rem;
+		background-color: var(--second-color);
+		border-radius: 5px;
+		&--img {
+			height: 190px;
+			width: auto;
+			margin-bottom: var(--mb-1);
+		}
+		&--title,
+		&--price {
+			align-self: start;
+		}
+		&--title {
+			margin-bottom: var(--mb-0-75);
+		}
+		&--price {
+			margin-bottom: var(--mb-1-5);
 		}
 	}
 }

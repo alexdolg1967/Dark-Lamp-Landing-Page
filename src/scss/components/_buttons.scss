@@ -9,6 +9,7 @@
 	border-radius: 0.5rem;
 	font-weight: var(--font-medium);
 	transition: 0.3s;
+	cursor: pointer;
 
 	&:hover .button__icon {
 		transform: translateX(0.25rem);
