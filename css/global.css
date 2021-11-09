@@ -35,8 +35,10 @@ button {
 h1,
 h2,
 h3 {
+  font-family: NotoSerif,serif;
   color: var(--title-color);
-  font-weight: var(--font-semi-bold);
+  font-weight: var(--font-medium);
+  text-transform: capitalize;
 }
 
 ul {
@@ -58,6 +60,7 @@ img {
   --max-width: 1230px;
   --first-color: #ff8531;
   --first-color-alt: #ffcd5e;
+  --second-color: #494949;
   --title-color: #fff;
   --text-color: #fff;
   --body-color: #2e2e2e;
