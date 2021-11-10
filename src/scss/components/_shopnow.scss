@@ -1,0 +1,32 @@
+.shopnow {
+	height: 300px;
+	padding: 3rem 0;
+	background-image: url("./../img/shop-bg.jpg");
+	background-position: 72%;
+	background-size: cover;
+	background-color: #ffb747;
+	@media screen and (min-width: 454px) {
+		height: 400px;
+		padding: 5rem 0;
+		background-position: 70%;
+	}
+	@media screen and (min-width: 992px) {
+		height: 500px;
+		padding: 7rem 0;
+		background-position: center;
+	}
+	&__content {
+		max-width: 430px;
+	}
+	&__title {
+		font-size: var(--h1-font-size);
+		text-transform: none;
+		margin-bottom: var(--mb-1);
+	}
+	&__descr {
+		margin-bottom: var(--mb-1-5);
+	}
+	&__button {
+		text-transform: uppercase;
+	}
+}

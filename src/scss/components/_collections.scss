@@ -16,6 +16,7 @@
 		}
 	}
 	&__item {
+		position: relative;
 		&--content {
 			grid-template-columns: 1fr;
 			gap: var(--grid-gap);
@@ -30,6 +31,20 @@
 			@media screen and (min-width: 1200px) {
 				margin: 0;
 				display: inline-block;
+			}
+		}
+		&--button {
+			position: absolute;
+			text-transform: uppercase;
+			bottom: 2rem;
+			left: 50%;
+			transform: translateX(-50%);
+			@media screen and (min-width: 1200px) {
+				transform: translateX(-63%);
+			}
+			&:hover {
+				color: var(--first-color);
+				background-color: #fff;
 			}
 		}
 	}
