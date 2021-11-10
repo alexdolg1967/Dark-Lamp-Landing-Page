@@ -67,6 +67,7 @@ img {
   --title-color: #fff;
   --text-color: #fff;
   --body-color: #2e2e2e;
+  --footer-color-bg: #363636;
   --container-color: #fff;
   --body-font: "Roboto",sans-serif;
   --big-font-size: 2rem;
@@ -75,7 +76,7 @@ img {
   --h3-font-size: 1rem;
   --normal-font-size: 0.938rem;
   --small-font-size: 0.813rem;
-  --smaller-font-size: 0.75rem;
+  --smaller-font-size: 0.72rem;
   --font-medium: 500;
   --font-semi-bold: 600;
   --font-bold: 700;
@@ -146,6 +147,32 @@ img {
   font-style: normal;
 }
 
+::-moz-selection {
+  background: var(--first-color);
+  color: #333;
+}
+
+::selection {
+  background: var(--first-color);
+  color: #333;
+}
+
+::-webkit-input-placeholder {
+  color: rgba(51,51,51,.6);
+}
+
+:-ms-input-placeholder {
+  color: rgba(51,51,51,.6);
+}
+
+::-moz-placeholder {
+  color: rgba(51,51,51,.6);
+}
+
+:-moz-placeholder {
+  color: rgba(51,51,51,.6);
+}
+
 .section {
   padding: 5.5rem 0 1rem;
 }
@@ -185,6 +212,6 @@ img {
     --h3-font-size: 1.25rem;
     --normal-font-size: 1rem;
     --small-font-size: 0.875rem;
-    --smaller-font-size: 0.813rem;
+    --smaller-font-size: 0.8rem;
   }
 }
