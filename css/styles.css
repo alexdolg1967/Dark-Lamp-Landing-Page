@@ -774,14 +774,17 @@
   bottom: 3rem;
 }
 
-::-webkit-scrollbar {
-  width: .6rem;
-  background: hsl(var(--hue),4%,53%);
+html::-webkit-scrollbar {
+  width: 12px;
 }
 
-::-webkit-scrollbar-thumb {
-  background: hsl(var(--hue),4%,29%);
-  border-radius: .5rem;
+html::-webkit-scrollbar-track {
+  background: rgba(124,67,67,.3);
+}
+
+html::-webkit-scrollbar-thumb {
+  background: var(--first-color);
+  border-radius: 6px;
 }
 
 @media screen and (min-width:420px) {

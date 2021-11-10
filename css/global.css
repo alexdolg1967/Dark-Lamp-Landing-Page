@@ -6,6 +6,8 @@
 }
 
 html {
+  -ms-scroll-snap-type: y mandatory;
+  scroll-snap-type: y mandatory;
   scroll-behavior: smooth;
 }
 
@@ -21,6 +23,7 @@ body {
   margin: 0;
   background-color: var(--body-color);
   color: var(--text-color);
+  overflow-anchor: none;
   -webkit-transition: .4s;
   -o-transition: .4s;
   transition: .4s;
