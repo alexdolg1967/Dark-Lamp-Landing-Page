@@ -1,6 +1,68 @@
 .collections {
+	position: relative;
+	padding-bottom: 5rem;
+	&__container {
+		grid-template-columns: minmax(260px, 1fr);
+		gap: var(--grid-gap);
+		@media screen and (min-width: 1200px) {
+			grid-template-columns: repeat(2, minmax(260px, 1fr));
+		}
+	}
 	&__title {
-		text-align: left;
+		text-align: center;
+		margin-bottom: var(--mb-1);
+		@media screen and (min-width: 1200px) {
+			text-align: left;
+		}
+	}
+	&__item {
+		&--content {
+			grid-template-columns: 1fr;
+			gap: var(--grid-gap);
+			@media screen and (min-width: 651px) {
+				grid-template-columns: repeat(2, minmax(262px, 1fr));
+			}
+		}
+		&--big-img {
+			margin: 0 auto;
+			display: block;
+			border-radius: 11px;
+			@media screen and (min-width: 1200px) {
+				margin: 0;
+				display: inline-block;
+			}
+		}
+	}
+	&__list {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+	&__info {
+		margin-bottom: var(--mb-1-5);
+	}
+}
+.lamp__card {
+	&--img {
+		width: 100%;
+		height: auto;
+		object-fit: cover;
+		margin-bottom: var(--mb-1);
+	}
+	&--title {
+		font-family: "NotoSerif", serif;
+		font-weight: var(--font-medium);
+		letter-spacing: 1px;
+		margin-bottom: var(--mb-1);
+	}
+	&--price {
+		font-family: "NotoSerif", serif;
+		margin-bottom: var(--mb-1);
+		color: var(--first-color);
+	}
+	&--button {
+		padding: 0.6rem 1.75rem;
+		border: 1px solid rgba(#ff8531, 0.2);
 		margin-bottom: var(--mb-1);
 	}
 }
