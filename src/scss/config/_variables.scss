@@ -10,6 +10,7 @@
 	--title-color: #fff;
 	--text-color: #fff;
 	--body-color: #2e2e2e;
+	--footer-color-bg: #363636;
 	--container-color: #fff;
 
 	/*========== Font and typography ==========*/
@@ -22,7 +23,7 @@
 	--h3-font-size: 1rem;
 	--normal-font-size: 0.938rem;
 	--small-font-size: 0.813rem;
-	--smaller-font-size: 0.75rem;
+	--smaller-font-size: 0.72rem;
 
 	// Responsive typography
 	@media screen and (min-width: 968px) {
@@ -32,7 +33,7 @@
 		--h3-font-size: 1.25rem;
 		--normal-font-size: 1rem;
 		--small-font-size: 0.875rem;
-		--smaller-font-size: 0.813rem;
+		--smaller-font-size: 0.8rem;
 	}
 
 	/*========== Font weight ==========*/
