@@ -103,7 +103,7 @@ const sr = ScrollReveal({
   distance: "120px",
   duration: 2500,
   delay: 400,
-  reset: true,
+  // reset: true,
 });
 
 sr.reveal(`.home__content`);
