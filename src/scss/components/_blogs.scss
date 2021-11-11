@@ -13,6 +13,7 @@
 		}
 	}
 	&__item {
+		transition: 0.4s ease-in-out;
 		&--img {
 			width: 100%;
 			height: auto;
@@ -31,10 +32,20 @@
 			margin-bottom: var(--mb-2);
 		}
 		&--button {
+			border-radius: 0;
 			border: none;
-			padding-left: 0;
+			border-bottom: 1px solid transparent;
+			padding: 0.5rem 0;
 			color: var(--first-color);
 			text-transform: capitalize;
+			transition: 0.4s ease-in-out;
+			&:hover {
+				background-color: transparent;
+				border-bottom: 1px solid var(--first-color);
+			}
+		}
+		&:hover {
+			transform: translateY(-0.5rem);
 		}
 	}
 }
