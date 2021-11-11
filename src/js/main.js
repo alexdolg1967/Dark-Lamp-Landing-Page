@@ -24,7 +24,6 @@ const navLink = document.querySelectorAll(".nav__link");
 
 function linkAction() {
   const navMenu = document.getElementById("nav-menu");
-  // When we click on each nav__link, we remove the show-menu class
   navMenu.classList.remove("show-menu");
 }
 navLink.forEach((n) => n.addEventListener("click", linkAction));
@@ -32,7 +31,6 @@ navLink.forEach((n) => n.addEventListener("click", linkAction));
 /*=============== CHANGE BACKGROUND HEADER ===============*/
 function scrollHeader() {
   const header = document.getElementById("header");
-  // When the scroll is greater than 80 viewport height, add the scroll-header class to the header tag
   if (this.scrollY >= 80) header.classList.add("scroll-header");
   else header.classList.remove("scroll-header");
 }
@@ -94,7 +92,6 @@ window.addEventListener("scroll", scrollActive);
 /*=============== SHOW SCROLL UP ===============*/
 function scrollUp() {
   const scrollUp = document.getElementById("scroll-up");
-  // When the scroll is higher than 400 viewport height, add the show-scroll class to the a tag with the scroll-top class
   if (this.scrollY >= 400) scrollUp.classList.add("show-scroll");
   else scrollUp.classList.remove("show-scroll");
 }
@@ -109,10 +106,8 @@ const sr = ScrollReveal({
   // reset: true
 });
 
-sr.reveal(`.home__data`);
+sr.reveal(`.home__content`);
 sr.reveal(`.lampoffer__container`, { delay: 300, origin: "left" });
-sr.reveal(`.about__img, .contact__box`, { origin: "left" });
-sr.reveal(`.about__data, .contact__form`, { origin: "right" });
-sr.reveal(`.steps__card, .product__card, .questions__group, .footer`, {
-  interval: 100,
-});
+sr.reveal(`.collections__container, .shopnow__content`, { origin: "left" });
+sr.reveal(`.bestseller__container`, { delay: 500, origin: "right" });
+sr.reveal(`.bestseller__top, .footer`, { interval: 100 });
