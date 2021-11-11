@@ -100,14 +100,15 @@ window.addEventListener("scroll", scrollUp);
 /*=============== SCROLL REVEAL ANIMATION ===============*/
 const sr = ScrollReveal({
   origin: "top",
-  distance: "60px",
+  distance: "120px",
   duration: 2500,
   delay: 400,
-  // reset: true
+  reset: true,
 });
 
 sr.reveal(`.home__content`);
 sr.reveal(`.lampoffer__container`, { delay: 300, origin: "left" });
 sr.reveal(`.collections__container, .shopnow__content`, { origin: "left" });
 sr.reveal(`.bestseller__container`, { delay: 500, origin: "right" });
+sr.reveal(`.blogs`, { delay: 500, origin: "bottom" });
 sr.reveal(`.bestseller__top, .footer`, { interval: 100 });
